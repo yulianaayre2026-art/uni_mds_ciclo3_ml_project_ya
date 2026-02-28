@@ -1,0 +1,38 @@
+
+======================================================
+REPORTE DE DESPLIEGUE E INFERENCIA - PARTE E
+Fecha de Registro: 2026-02-28 04:19:05
+======================================================
+
+1. RESUMEN DEL DESPLIEGUE:
+--------------------------
+- Servidor: Flask REST API
+- Puerto: 5000
+- Artefactos cargados: mejor_modelo_volumen.pkl, scaler_blueberry.pkl, mappings.pkl
+- Estado: Exitoso
+
+2. RESULTADOS DE LAS PRUEBAS DE INFERENCIA (2026):
+--------------------------------------------------
+ESCENARIO A (Prueba Puntual):
+- Fecha: 2026-05-20
+- Ubicación: PAITA
+- Variedad: VENTURA (Orgánico)
+- Precio FOB: $9.45
+- Resultado: 10114.75 KG
+
+ESCENARIO B (Simulación Semanal):
+- Fecha: 2da Semana Febrero 2026
+- Ubicación: SALAVERRY
+- Variedad: SIN VARIEDAD (Convencional)
+- Precio FOB: $5.00
+- Resultado Acumulado: 42042.77 KG (7 días proyectados)
+
+3. CONCLUSIONES TÉCNICAS:
+-------------------------
+El modelo demuestra sensibilidad a las variables categóricas. El volumen
+estimado para Salaverry con "Sin Variedad" es proporcionalmente menor
+por día comparado con la eficiencia de Paita/Ventura, lo cual es
+consistente con el comportamiento histórico del sector agroexportador.
+
+======================================================
+FIN DEL REPORTE

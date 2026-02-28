@@ -1,0 +1,55 @@
+
+==========================================================
+DICCIONARIO DE VARIABLES (FEATURES) - PROYECTO BLUEBERRY
+==========================================================
+
+Este documento describe las variables del dataset final de entrenamiento 
+almacenado en /data/training/.
+
+----------------------------------------------------------
+1. DESCRIPCIÓN NARRATIVA
+----------------------------------------------------------
+
+* ANIO / MES / SEMANA: Variables numéricas extraídas de la columna original FECHA. 
+  Capturan la estacionalidad del mercado, permitiendo identificar ciclos de cosecha 
+  y fluctuaciones temporales.
+
+* ADUA_DESC_CODE: Código numérico (Label Encoding) de la Aduana. Representa el 
+  origen logístico, permitiendo entender la influencia del puerto de salida 
+  en el peso de los envíos.
+
+* PAIS_DESC_CODE: Identificador numérico del país de destino. Variable crítica 
+  ya que la demanda internacional dicta estándares de volumen y frecuencia.
+
+* VARIEDAD_CODE: Código numérico de la variedad (Ventura, Biloxi, etc.). 
+  Diferencia el comportamiento del peso según las características físicas 
+  de cada tipo de fruto.
+
+* ES_ORGANICO: Variable binaria (1: Orgánico, 0: Convencional). Identifica el 
+  nicho de mercado y ajusta la predicción según el tipo de certificación.
+
+* FOB_DOLPOL_KG: Valor unitario por kilogramo en dólares. Establece una 
+  correlación económica directa para inferir el peso neto a partir del valor comercial.
+
+* PESO_NETO (Variable Objetivo): Masa total en kilogramos (kg). Es el valor 
+  cuantitativo que el modelo busca predecir.
+
+----------------------------------------------------------
+2. RESUMEN TÉCNICO DE FEATURES
+----------------------------------------------------------
+
+| Variable          | Tipo de Dato          | Función          |
+|-------------------|-----------------------|------------------|
+| ANIO              | Numérico (Escalado)   | Feature          |
+| MES               | Numérico (Escalado)   | Feature          |
+| SEMANA            | Numérico (Escalado)   | Feature          |
+| ADUA_DESC_CODE    | Categórico (Codific.) | Feature          |
+| PAIS_DESC_CODE    | Categórico (Codific.) | Feature          |
+| VARIEDAD_CODE     | Categórico (Codific.) | Feature          |
+| ES_ORGANICO       | Binario               | Feature          |
+| FOB_DOLPOL_KG     | Numérico (Escalado)   | Feature          |
+| PESO_NETO         | Numérico (Real)       | Target (Objetivo)|
+
+==========================================================
+Archivo generado para cumplimiento de la Parte D - MLOps
+==========================================================
