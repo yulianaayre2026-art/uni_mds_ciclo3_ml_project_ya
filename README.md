@@ -135,7 +135,7 @@ o	Entrenamiento (80%): 4,988 muestras utilizadas para que el modelo aprenda los 
 
 o	Prueba (20%): 1,247 muestras reservadas para validar la precisión del modelo con datos que nunca ha visto.
 
-Se utilizó una división aleatoria para asegurar que tanto el entrenamiento como la validación contengan muestras de todas las estaciones, puertos y variedades, evitando sesgos temporales. Esto permite que el modelo aprenda la estructura cíclica del movimiento aduanero en lugar de solo memorizar la tendencia del último año.
+Se utilizó una división aleatoria para asegurar que tanto el entrenamiento como la validación contengan muestras de todas las estaciones, puertos y variedades, evitando sesgos temporales. Esto permite que el modelo aprenda la estructura cíclica de la dinámica cambiante del negocio agroexportador (por ejemplo, variedades que surgen y desaparecen).
 
 •	Normalización y Escalamiento (StandardScaler): Se utilizó la técnica de Estandarización, transformando las variables para que tengan una media cercana a 0 y una desviación estándar de 1.
 
